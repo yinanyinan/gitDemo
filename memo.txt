@@ -37,6 +37,9 @@ git commit -m "對該版本的文字敘述"
 
 最後再次用git log確認狀態
 
+推進branch(帳號上才看得到):
+git push -u origin branch名
+
 狀態說明:
 
 working directory(檔案在本機，未保存可隨時刪除)
@@ -44,5 +47,24 @@ working directory(檔案在本機，未保存可隨時刪除)
 staging area     (檔案在本機，已保存，準備推向git伺服器)
 =>git commit  
 repository       (已提交於git伺服器) 
-  
-上傳:
+=>git push -u 主機名 branch名 
+變更 commit位置(用錯https或輸入錯誤時):
+git remote set-url origin https://github.com/yinanyinan/gitDemo.git
+
+確認主機:
+git remote -v
+
+刪除主機:
+git remote remove xxx
+
+確認branch:
+git branch
+
+變更目前branch:
+git cheack branch XXX
+
+新增branch:
+git branch xxx
+
+刪除branch:
+git branch -d xxx
