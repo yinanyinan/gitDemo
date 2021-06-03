@@ -1,0 +1,38 @@
+用Git Bash生成新專案並且進行最初的版本管理
+
+參考: https://www.youtube.com/watch?v=-SHIlYaq0I0&list=PL2SrkGHjnWcxw6N1-hg34nWy8UWsFOn5V&index=3
+
+git是以linux為主要環境，故安裝後可於git Bash使用某些linux指令。
+git CMD是以win向，比較不推薦使用。
+git GUI是圖形化操作介面，專攻後端也許會比較常用。
+
+進入資料夾等與win一樣用cd
+
+確認目前指向的對象(帳號)
+git config --global --list
+GitHub Desktop最吼也要確認一下
+
+初始化資料夾:
+git init
+隱藏檔看不到，可確認資料夾容量是否增加。
+
+確認log(顯示每次更新的資料):
+git log
+若目前未有任何分支，會顯示以下。
+fatal: your current branch 'master' does not have any commits yet
+
+新增檔案:
+touch xxx.js
+
+確認版本是否更新:
+git status
+若有更新資料且未加入，檔案顯示紅字。
+
+更新:
+git add xxx.js
+再次git status檔名會變為綠字，此時檔案為等待commit狀態。
+
+上傳commit:
+git commit -m "對該版本的文字敘述" 
+
+最後再次用git log確認狀態
