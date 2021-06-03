@@ -36,3 +36,13 @@ git add xxx.js
 git commit -m "對該版本的文字敘述" 
 
 最後再次用git log確認狀態
+
+狀態說明:
+
+working directory(檔案在本機，未保存可隨時刪除)
+=>git add
+staging area     (檔案在本機，已保存，準備推向git伺服器)
+=>git commit  
+repository       (已提交於git伺服器) 
+  
+上傳:
